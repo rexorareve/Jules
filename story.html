@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYPMYFZVV2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CYPMYFZVV2');
+    </script>
+    
+    <title>Our Story | Digital Excellence - Rexora Reve</title>
+    <meta name="description" content="Learn the story of Rexora Reve, a digital marketing agency in Nawada — our mission, vision, and how we help local businesses grow online.">
+    <meta name="keywords" content="Rexora Reve story, digital marketing agency Nawada, company mission, vision, values">
+    <link rel="canonical" href="https://rexorareve.netlify.app/story.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Story | Rexora Reve">
+    <meta property="og:description" content="The Nawada-born studio scaling brands beyond limits. Discover the story behind Rexora Reve.">
+    <meta property="og:url" content="https://rexorareve.netlify.app/story.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rexora Reve">
+    <meta property="og:image" content="https://rexorareve.netlify.app/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Rexora Reve — Scale Beyond Limits (brand card)">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Story | Rexora Reve">
+    <meta name="twitter:description" content="The Nawada-born studio scaling brands beyond limits. Discover the story behind Rexora Reve.">
+    <meta name="twitter:image" content="https://rexorareve.netlify.app/assets/og-image.jpg">
+    <meta name="twitter:image:alt" content="Rexora Reve — Scale Beyond Limits (brand card)">
+    
+    <!-- Favicons -->
+    <!-- Icons — full cross-platform kit -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=6">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=6">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=6">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png?v=6">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=6" sizes="48x48">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=6">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg?v=6" color="#c0c0c0">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="assets/favicon-144x144.png">
+    <link rel="manifest" href="assets/site.webmanifest?v=6">
+    <meta name="msapplication-TileColor" content="#050505">
+    <meta name="msapplication-config" content="assets/browserconfig.xml">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e8e8e8;
+            --secondary: #9c9c9c;
+            --accent: #c4c4c4;
+            --dark: #050505;
+            --text-main: rgba(255, 255, 255, 0.95);
+            --text-muted: rgba(255, 255, 255, 0.65);
+            --silver: #c0c0c0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .loader-container {
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            z-index: 99999;
+            transition: opacity 1s ease, visibility 1s ease;
+        }
+
+        .logo-text {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: 12px;
+            white-space: nowrap;
+            background: linear-gradient(90deg, #404040, #ffffff, #c0c0c0, #404040);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: chromeShine 3s linear infinite;
+            margin: 0;
+        }
+
+        @keyframes chromeShine {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .loader-container.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        @media (max-width: 600px) {
+            .logo-text {
+                font-size: 2.2rem;
+                letter-spacing: 6px;
+            }
+        }
+
+        .liquid-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            pointer-events: none; overflow: hidden;
+            background: radial-gradient(ellipse at 20% 20%, rgba(232, 232, 232, 0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(156, 156, 156, 0.06) 0%, transparent 50%), radial-gradient(ellipse at 50% 50%, rgba(192, 192, 192, 0.03) 0%, transparent 70%), var(--dark);
+        }
+
+        .silver-sphere {
+            position: absolute; border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, rgba(200, 200, 200, 0.6) 20%, rgba(150, 150, 150, 0.4) 40%, rgba(100, 100, 100, 0.2) 60%, rgba(50, 50, 50, 0.1) 80%, transparent 100%);
+            box-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.3), inset 5px 5px 20px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.1), 0 0 80px rgba(192, 192, 192, 0.05);
+            will-change: transform;
+        }
+
+        .sphere-1 { width: 300px; height: 300px; top: 10%; left: -5%; opacity: 0.26; }
+        .sphere-2 { width: 200px; height: 200px; top: 60%; right: -3%; opacity: 0.195; }
+        .sphere-3 { width: 150px; height: 150px; top: 30%; left: 60%; opacity: 0.163; }
+
+        .glass-ring {
+            position: absolute; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.08);
+            background: transparent; box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.03), 0 0 30px rgba(192, 192, 192, 0.03); will-change: transform;
+        }
+
+        .ring-1 { width: 400px; height: 400px; top: 5%; right: 10%; opacity: 0.195; }
+        .ring-2 { width: 600px; height: 600px; bottom: -10%; left: -10%; opacity: 0.13; }
+
+        .liquid-blob {
+            position: absolute; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(192, 192, 192, 0.04) 50%, rgba(100, 100, 100, 0.02) 100%);
+            backdrop-filter: blur(1px);
+            transition: border-radius 2s ease-in-out;
+            will-change: transform, border-radius;
+            animation: morphBlob 20s infinite ease-in-out;
+        }
+
+        .blob-1 { width: 500px; height: 500px; top: -10%; right: -5%; opacity: 0.26; }
+        .blob-2 { width: 400px; height: 400px; bottom: -5%; left: 30%; opacity: 0.195; animation-delay: -10s; }
+
+        @keyframes morphBlob {
+            0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            50% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+        }
+
+        .particles-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; overflow: hidden; }
+
+        .particle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(192, 192, 192, 0.4) 50%, transparent 100%);
+            border-radius: 50%;
+            animation: floatParticle linear infinite;
+        }
+
+        @keyframes floatParticle {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.65; }
+            90% { opacity: 0.65; }
+            100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+        }
+
+        .aurora {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            pointer-events: none; opacity: 0.163;
+            background: linear-gradient(180deg, transparent 0%, rgba(232, 232, 232, 0.03) 30%, rgba(156, 156, 156, 0.02) 50%, rgba(192, 192, 192, 0.02) 70%, transparent 100%); will-change: transform;
+        }
+
+        .noise-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;
+            pointer-events: none; opacity: 0.013;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        /* ============================================
+           PREMIUM HEADER - unified across all pages
+           ============================================ */
+        .site-header {
+            position: fixed; top: 0; left: 0; width: 100%; padding: 0.85rem 5%; z-index: 1000;
+            background: rgba(6, 6, 6, 0.55);
+            backdrop-filter: blur(18px) saturate(140%); -webkit-backdrop-filter: blur(18px) saturate(140%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .site-header.scrolled {
+            background: rgba(4, 4, 4, 0.88); padding: 0.5rem 5%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .site-header nav { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
+
+        .brand-link { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+
+        .brand-img {
+            width: 46px; height: 46px; border-radius: 50%; object-fit: cover;
+            background-color: #000000; border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: transform 0.35s ease, border-color 0.35s ease;
+        }
+        .brand-link:hover .brand-img { transform: rotate(-8deg) scale(1.06); border-color: rgba(255, 255, 255, 0.35); }
+
+        .brand-name {
+            font-size: 1.05rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.95); white-space: nowrap;
+        }
+        .brand-name em { font-style: normal; color: inherit; font-weight: 700; }
+
+        .nav-links { display: flex; gap: 0.5rem; list-style: none; align-items: center; margin: 0; padding: 0; }
+        .nav-links a {
+            display: inline-flex; align-items: baseline; gap: 8px;
+            color: rgba(255, 255, 255, 0.55); text-decoration: none; font-weight: 600;
+            font-size: 0.78rem; letter-spacing: 0.17em; text-transform: uppercase;
+            padding: 0.55rem 0.9rem; border-radius: 10px; position: relative;
+            transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+        }
+        .nav-num { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.28); transition: color 0.3s ease; }
+        .nav-links a:hover { color: #ffffff; background: rgba(255, 255, 255, 0.05); transform: translateY(-1px); }
+        .nav-links a:hover .nav-num { color: rgba(255, 255, 255, 0.7); }
+        .nav-links a.active { color: #ffffff; }
+        .nav-links a.active .nav-num { color: rgba(255, 255, 255, 0.7); }
+        .nav-links a.active::after {
+            content: ''; position: absolute; left: 14px; right: 14px; bottom: 3px; height: 1px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Menu Toggle */
+        .menu-toggle {
+            display: none; flex-direction: column; gap: 6px; cursor: pointer; appearance: none;
+            padding: 12px; border-radius: 12px; transition: all 0.3s ease; font: inherit; color: inherit;
+            background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .menu-toggle:hover { background: rgba(255, 255, 255, 0.09); border-color: rgba(255, 255, 255, 0.16); }
+        .menu-toggle span {
+            width: 24px; height: 2px; background: linear-gradient(90deg, #ffffff, #c0c0c0);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); border-radius: 2px;
+        }
+
+        /* Mobile Menu Overlay */
+        .menu-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 998;
+            opacity: 0; visibility: hidden; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .menu-overlay.active { opacity: 1; visibility: visible; }
+
+
+        @media (max-width: 560px) {
+            .brand-img { width: 40px; height: 40px; }
+            .brand-link { gap: 10px; }
+            .brand-name { font-size: 0.8rem; letter-spacing: 0.14em; }
+        }
+
+        .hero {
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            padding: 8rem 5% 4rem; position: relative; text-align: center;
+        }
+
+        .hero-content { max-width: 900px; z-index: 2; position: relative; }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; line-height: 1.1;
+            margin-bottom: 1.5rem; letter-spacing: -2px; position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #c0c0c0 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            animation: shimmer 8s ease-in-out infinite;
+            filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.1));
+        }
+
+        @keyframes shimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+
+        .hero-subtitle {
+            font-size: 1rem; color: var(--primary); text-transform: uppercase; letter-spacing: 4px;
+            margin-bottom: 1rem; font-weight: 600; opacity: 0.9;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.25rem); color: var(--text-muted);
+            margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7;
+        }
+
+        .hero p strong { color: var(--text-main); font-weight: 600; }
+
+        .cta-buttons { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            padding: 1rem 2.5rem; border-radius: 60px; font-weight: 600; cursor: pointer;
+            text-decoration: none; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative; overflow: hidden; font-size: 0.95rem; letter-spacing: 0.5px; border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+            color: #fff; border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(232, 232, 232, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-primary::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover::before { left: 100%; }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%);
+            transform: translateY(-3px); box-shadow: 0 15px 40px rgba(232, 232, 232, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary {
+            background: transparent; color: var(--text-muted); border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-secondary:hover {
+            border-color: rgba(255, 255, 255, 0.3); color: var(--text-main);
+            background: rgba(255, 255, 255, 0.03); transform: translateY(-2px);
+        }
+
+        section { padding: 8rem 5%; max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+        .section-header { text-align: center; margin-bottom: 5rem; }
+
+        .section-tag {
+            display: inline-block; padding: 0.5rem 1.5rem;
+            background: rgba(232, 232, 232, 0.1); border: 1px solid rgba(232, 232, 232, 0.2);
+            border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: var(--primary);
+            text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.5rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: var(--text-main);
+            margin-bottom: 1rem; letter-spacing: -1px;
+        }
+
+        .section-header p { color: var(--text-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem; }
+
+        /* Founder (text-only) */
+        .founder-card { max-width: 820px; margin: 0 auto; text-align: center; padding: 3.5rem 2.5rem; }
+        .founder-name { font-size: 2.25rem; color: var(--text-main); margin-bottom: 0.35rem; font-weight: 700; letter-spacing: -0.5px; }
+        .founder-role { font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 2.25rem; display: block; text-transform: uppercase; letter-spacing: 0.24em; }
+        .founder-card .quote { font-size: 1.15rem; font-style: italic; color: rgba(255, 255, 255, 0.85); line-height: 1.8; margin-bottom: 1.75rem; border-left: none; padding-left: 0; }
+        .founder-bio { color: var(--text-muted); line-height: 1.9; max-width: 640px; margin: 0 auto; }
+
+        .glass-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
+        .glass-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 2.5rem;
+            border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); position: relative; overflow: hidden;
+        }
+
+        .glass-card:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+            transform: translateY(-10px); border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3), 0 0 50px rgba(232, 232, 232, 0.1);
+        }
+
+        .glass-card h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--text-main); font-weight: 600; display: flex; align-items: center; gap: 0.5rem; }
+        .glass-card p { color: var(--text-muted); line-height: 1.7; }
+
+        .icon-small {
+            width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+            background: rgba(232, 232, 232, 0.15); border-radius: 10px; margin-bottom: 1.5rem; color: var(--primary);
+        }
+
+        .quote {
+            font-size: 1.2rem; font-style: italic; color: rgba(255,255,255,0.8);
+            border-left: 3px solid var(--secondary); padding-left: 1.5rem; margin-bottom: 2rem;
+        }
+
+        .process-step { display: flex; gap: 2rem; margin-bottom: 3rem; align-items: flex-start; }
+
+        .step-number {
+            font-size: 4rem; font-weight: 800; line-height: 1;
+            background: linear-gradient(to bottom, var(--text-main), transparent);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            opacity: 0.3; flex-shrink: 0; width: 80px;
+        }
+
+        .step-content h4 { font-size: 1.5rem; color: var(--text-main); margin-bottom: 0.5rem; }
+        .step-content p { color: var(--text-muted); }
+
+        footer {
+            padding: 5rem 5% 2rem; text-align: center; color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent); position: relative; z-index: 2;
+        }
+
+        .footer-logo {
+            font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #fff, var(--silver));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            margin-bottom: 2rem; display: inline-block; text-decoration: none;
+        }
+
+        .footer-links { margin-bottom: 2rem; display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; transition: all 0.3s; position: relative; text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.14em; font-weight: 500; }
+        .footer-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--primary); transition: width 0.3s; }
+        .footer-links a:hover { color: #fff; }
+        .footer-links a:hover::after { width: 100%; }
+
+        .footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .footer-bottom p { font-size: 0.9rem; opacity: 0.6; }
+
+
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2.5rem; letter-spacing: -1px; }
+            .cta-buttons { gap: 0.75rem; }
+            .btn { padding: 0.85rem 1.6rem; font-size: 0.85rem; }
+            section { padding: 5rem 5%; }
+        }
+        /* ==== Mobile navigation (canonical - keep last) ==== */
+        @media (max-width: 968px) {
+            .nav-links {
+                position: fixed; top: 0; right: -100%; width: 75%; max-width: 380px; height: 100vh;
+                background: linear-gradient(135deg, rgba(15, 15, 15, 0.97) 0%, rgba(8, 8, 8, 0.99) 100%);
+                backdrop-filter: blur(40px) saturate(180%); -webkit-backdrop-filter: blur(40px) saturate(180%);
+                display: flex; flex-direction: column; justify-content: center; align-items: stretch; padding: 2rem;
+                transition: right 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+                border-left: 1px solid rgba(255, 255, 255, 0.08);
+                gap: 0.75rem; z-index: 999; box-shadow: -24px 0 70px rgba(0, 0, 0, 0.6);
+            }
+            .nav-links.active { right: 0; }
+            .nav-links li { width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+            .nav-links a { display: flex; font-size: 1.05rem; letter-spacing: 0.14em; padding: 1.05rem 1.25rem; width: 100%; border-radius: 14px; }
+            .nav-num { font-size: 0.7rem; }
+            .nav-links a.active::after { display: none; }
+            .nav-links a:hover { background: rgba(255, 255, 255, 0.06); padding-left: 1.75rem; transform: none; }
+            .nav-links a.active { background: rgba(255, 255, 255, 0.07); }
+            .menu-toggle { display: flex; z-index: 1001; }
+        }
+        @media (max-width: 560px) { .nav-links { width: 85%; } }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://rexorareve.netlify.app/#organization",
+                "name": "Rexora Reve",
+                "url": "https://rexorareve.netlify.app/",
+                "logo": { "@type": "ImageObject", "url": "https://rexorareve.netlify.app/assets/logo.png" },
+                "description": "Digital marketing agency providing SEO, web design, social media marketing, and performance marketing services.",
+                "founder": { "@type": "Person", "@id": "https://rexorareve.netlify.app/#founder" },
+                "sameAs": ["https://www.instagram.com/rexora_reve"]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    
+    <div id="loader" class="loader-container">
+        <div class="logo-text">REXORA REVE</div>
+    </div>
+
+    <div class="liquid-bg">
+        <div class="silver-sphere sphere-1" data-speed="0.03"></div>
+        <div class="silver-sphere sphere-2" data-speed="0.05"></div>
+        <div class="silver-sphere sphere-3" data-speed="0.04"></div>
+        <div class="glass-ring ring-1" data-speed="0.02"></div>
+        <div class="glass-ring ring-2" data-speed="0.025"></div>
+        <div class="liquid-blob blob-1" data-speed="0.015"></div>
+        <div class="liquid-blob blob-2" data-speed="0.02"></div>
+    </div>
+
+    <div class="aurora" data-speed="0.01"></div>
+    <div class="particles-container" id="particles"></div>
+    <div class="noise-overlay"></div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <header class="site-header">
+        <nav aria-label="Primary">
+            <a href="index.html" title="Rexora Reve - Home" class="brand-link" aria-label="Rexora Reve - Home">
+                <img src="assets/logo.png" alt="Rexora Reve logo" class="brand-img" width="46" height="46">
+                <span class="brand-name">Rexora <em>Reve</em></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home"><span class="nav-num">01</span>Overview</a></li>
+                <li><a href="our-work.html"><span class="nav-num">02</span>Our Work</a></li>
+                <li><a href="story.html" class="active" aria-current="page"><span class="nav-num">03</span>Our Story</a></li>
+            </ul>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">Who We Are</p>
+            <h1>CRAFTING DIGITAL LEGACIES</h1>
+            <p>We are <strong>Rexora Reve</strong>, a digital marketing agency in Nawada that bridges the gap between local businesses and global digital opportunities. We don't just market; we engineer growth.</p>
+            <div class="cta-buttons">
+                <a href="#mission" class="btn btn-primary">Our Story</a>
+                <a href="index.html#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="section-header">
+            <span class="section-tag">Our Story</span>
+            <h2>From Nawada to the World</h2>
+        </div>
+        <div class="glass-card" style="text-align: center; padding: 4rem 2rem;">
+            <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto; color: var(--text-muted);">
+                Born from a passion for technology and a deep understanding of the local market, Rexora Reve was established with a singular vision: to empower businesses in Bihar with world-class digital tools. We realized that while talent was abundant in places like Nawada, the digital strategies to showcase that talent were missing. We stepped in to fill that void, combining data-driven precision with creative storytelling. Today, we stand as a testament to what is possible when innovation meets dedication.
+            </p>
+        </div>
+    </section>
+
+    <section id="values">
+        <div class="glass-grid">
+            <div class="glass-card">
+                <div class="icon-small">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10z"/><path d="M2 12h20"/></svg>
+                </div>
+                <h3>Our Mission</h3>
+                <p>To democratize access to high-end digital marketing for businesses of all sizes. We strive to deliver measurable ROI through transparency, integrity, and cutting-edge strategy.</p>
+            </div>
+
+            <div class="glass-card">
+                <div class="icon-small">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3>Our Vision</h3>
+                <p>To become the most trusted digital growth partner in Eastern India, fostering an ecosystem where local businesses can compete and thrive on a global stage.</p>
+            </div>
+
+            <div class="glass-card">
+                <div class="icon-small">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10 8-10 8-10 8 8-10 8 8-10 8-10z"/><path d="M1.5 9.3l5.7 5.7"/><path d="M16.8 15l5.7 5.7"/></svg>
+                </div>
+                <h3>Our Values</h3>
+                <p>We believe in "Results over Rhetoric". Every strategy we deploy is backed by data. We value long-term partnerships over short-term gains, ensuring your success is our success.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder">
+        <div class="section-header">
+            <span class="section-tag">Leadership</span>
+            <h2>Meet the Founder</h2>
+        </div>
+        <div class="glass-card founder-card">
+            <h3 class="founder-name">Ritik Raj</h3>
+            <span class="founder-role">Founder</span>
+            <p class="quote">&ldquo;In the digital age, your geographical location no longer defines your success&mdash;your digital presence does. My goal is to ensure every business in Nawada has a presence that demands attention.&rdquo;</p>
+            <p class="founder-bio">Ritik Raj founded Rexora Reve with a background in both technical engineering and creative marketing. He identified a gap in the market where local businesses were either invisible online or being exploited by expensive, ineffective agencies. He built Rexora Reve as a solution&mdash;an agency that understands the local pulse but speaks the global digital language.</p>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="section-header">
+            <span class="section-tag">Methodology</span>
+            <h2>How We Work</h2>
+            <p>A streamlined process designed for efficiency and results</p>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.02); padding: 3rem; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05);">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h4>Discovery & Audit</h4>
+                    <p>We begin by analyzing your current digital footprint, understanding your market competitors, and identifying your unique value proposition.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h4>Strategy & Design</h4>
+                    <p>We craft a bespoke roadmap. Whether it's a new website or an SEO campaign, we design with your specific KPIs and brand voice in mind.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h4>Execution & Development</h4>
+                    <p>Our engineers and creatives get to work. We build high-performance assets, write compelling copy, and set up tracking infrastructure.</p>
+                </div>
+            </div>
+
+            <div class="process-step" style="margin-bottom: 0;">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h4>Analyze & Scale</h4>
+                    <p>Launch is just the beginning. We continuously monitor data, optimize campaigns, and scale what works to ensure consistent growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo">REXORA REVE</a>
+            <div class="footer-links">
+                <a href="index.html#home">Overview</a>
+                
+                <a href="our-work.html">Our Work</a>
+                <a href="story.html" class="active">Our Story</a>
+                <a href="https://instagram.com/rexora_reve" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <!--email_off--><a href="mailto:contact@rexorareve.com">Email</a><!--/email_off-->
+                <a href="https://wa.me/919523945978?text=Hi%20Rexora%20Reve!%20I'm%20interested%20in%20your%20digital%20marketing%20services." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rexora Reve. All rights reserved. | Digital Marketing Company in Nawada, Bihar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const LOADING_DURATION = 2500;
+            const originalOverflow = document.body.style.overflow;
+            document.body.style.overflow = "hidden";
+
+            window.addEventListener("load", () => {
+                setTimeout(() => {
+                    const loader = document.getElementById("loader");
+                    if (!loader) { document.body.style.overflow = originalOverflow || ""; return; }
+                    loader.classList.add("hidden");
+                    document.body.style.overflow = originalOverflow || "";
+                    setTimeout(() => { loader.remove(); }, 1000);
+                }, LOADING_DURATION);
+            });
+
+            setTimeout(() => {
+                const loader = document.getElementById("loader");
+                if (loader) { loader.classList.add("hidden"); setTimeout(() => loader.remove(), 1000); document.body.style.overflow = originalOverflow || ""; }
+            }, 10000);
+        })();
+
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = 25;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                const size = Math.random() * 3 + 1;
+                const left = Math.random() * 100;
+                const duration = Math.random() * 25 + 20;
+                const delay = Math.random() * 25;
+                particle.style.cssText = `width: ${size}px; height: ${size}px; left: ${left}%; animation-duration: ${duration}s; animation-delay: -${delay}s;`;
+                container.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Scroll Reactive Background (lerp-smoothed parallax - zero rubber-banding)
+        const spheres = document.querySelectorAll('.silver-sphere');
+        const rings = document.querySelectorAll('.glass-ring');
+        const blobs = document.querySelectorAll('.liquid-blob');
+        const aurora = document.querySelector('.aurora');
+        let targetScroll = 0, smoothScroll = 0, bgRafRunning = false;
+
+        function updateBackgroundElements(sy) {
+            spheres.forEach((sphere, index) => {
+                const speed = parseFloat(sphere.dataset.speed) || 0.03;
+                const direction = index % 2 === 0 ? 1 : -1;
+                const translateY = sy * speed * direction; // true parallax: subtle, never leaves the scene
+                const translateX = Math.sin(sy * 0.0012 + index) * 22;
+                const rotateAmount = sy * speed * 0.12;
+                const scale = 1 + Math.sin(sy * 0.001 + index) * 0.06;
+                sphere.style.transform = `translateY(${translateY}px) translateX(${translateX}px) rotate(${rotateAmount}deg) scale(${scale})`;
+            });
+            rings.forEach((ring, index) => {
+                const speed = parseFloat(ring.dataset.speed) || 0.02;
+                const direction = index % 2 === 0 ? 1 : -1;
+                const translateY = sy * speed * 0.6 * direction;
+                const rotation = sy * speed * 1.6 * direction;
+                const scale = 1 + Math.sin(sy * 0.001) * 0.04;
+                ring.style.transform = `translateY(${translateY}px) rotate(${rotation}deg) scale(${scale})`;
+            });
+            blobs.forEach((blob, index) => {
+                const speed = parseFloat(blob.dataset.speed) || 0.015;
+                const translateY = sy * speed;
+                const translateX = Math.sin(sy * 0.0009 + index * 2) * 26;
+                const skewX = Math.sin(sy * 0.0015) * 3;
+                const skewY = Math.cos(sy * 0.0015) * 2;
+                blob.style.transform = `translateY(${translateY}px) translateX(${translateX}px) skew(${skewX}deg, ${skewY}deg)`;
+            });
+            if (aurora) {
+                const auroraShift = sy * 0.02;
+                const skewAmount = Math.sin(sy * 0.001) * 3;
+                aurora.style.transform = `translateY(${auroraShift}px) skewX(${skewAmount}deg)`;
+                aurora.style.opacity = 0.13 + Math.sin(sy * 0.002) * 0.05;
+            }
+        }
+
+        function bgAnimate() {
+            smoothScroll += (targetScroll - smoothScroll) * 0.085;
+            if (Math.abs(targetScroll - smoothScroll) < 0.1) smoothScroll = targetScroll;
+            updateBackgroundElements(smoothScroll);
+            if (smoothScroll !== targetScroll) { requestAnimationFrame(bgAnimate); }
+            else { bgRafRunning = false; }
+        }
+
+        window.addEventListener('scroll', () => {
+            targetScroll = window.scrollY;
+            if (!bgRafRunning) { bgRafRunning = true; requestAnimationFrame(bgAnimate); }
+        }, { passive: true });
+        targetScroll = smoothScroll = window.scrollY;
+        updateBackgroundElements(smoothScroll);
+
+        const header = document.querySelector('.site-header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
+                const spans = menuToggle.querySelectorAll('span');
+                if (navLinks.classList.contains('active')) {
+                    spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+                    spans[1].style.opacity = '0';
+                    spans[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+
+            menuOverlay.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                const spans = menuToggle.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+                document.body.style.overflow = '';
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && navLinks.classList.contains('active')) { menuToggle.click(); }
+            });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = header.offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card, .process-step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+            observer.observe(el);
+        });
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let currentMouseX = 0;
+        let currentMouseY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+            mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+        });
+
+        function animateMouseParallax() {
+            currentMouseX += (mouseX - currentMouseX) * 0.05;
+            currentMouseY += (mouseY - currentMouseY) * 0.05;
+
+            spheres.forEach((sphere, index) => {
+                const depth = (index + 1) * 8;
+                const currentTransform = sphere.style.transform || '';
+                const mouseTransform = `translate(${currentMouseX * depth}px, ${currentMouseY * depth}px)`;
+                if (!currentTransform.includes('translate')) { sphere.style.transform = mouseTransform; }
+            });
+
+            requestAnimationFrame(animateMouseParallax);
+        }
+
+        animateMouseParallax();
+
+        const cursorGlow = document.createElement('div');
+        cursorGlow.style.cssText = `position: fixed; width: 400px; height: 400px; background: radial-gradient(circle, rgba(232, 232, 232, 0.08) 0%, transparent 70%); border-radius: 50%; pointer-events: none; z-index: 0; transition: opacity 0.3s ease; transform: translate(-50%, -50%); opacity: 0;`;
+        document.body.appendChild(cursorGlow);
+
+        let cursorTimeout;
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+            cursorGlow.style.opacity = '1';
+            clearTimeout(cursorTimeout);
+            cursorTimeout = setTimeout(() => { cursorGlow.style.opacity = '0'; }, 1000);
+        });
+    </script>
+</body>
+</html>
